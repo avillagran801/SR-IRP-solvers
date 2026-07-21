@@ -1,0 +1,100 @@
+Checks: >
+  -*,
+  clang-analyzer-*,
+  modernize-*,
+  performance-*,
+  bugprone-*,
+  portability-*,
+  readability-*,
+  cppcoreguidelines-*,
+  concurrency-*,
+  misc-*,
+
+  google-default-arguments,
+  google-build-namespaces,
+  google-runtime-operator,
+  hicpp-multiway-paths-covered,
+  hicpp-signed-bitwise,
+  llvm-namespace-comment,
+
+  -modernize-use-nodiscard,
+  -modernize-use-auto,
+  -modernize-use-trailing-return-type,
+  -modernize-use-std-numbers,
+  -readability-identifier-length,
+  -readability-magic-numbers,
+  -readability-named-parameter,
+  -readability-function-cognitive-complexity,
+  -readability-isolate-declaration,
+  -readability-suspicious-call-argument,
+  -readability-uppercase-literal-suffix,
+  -readability-braces-around-statements,
+  -readability-qualified-auto,
+  -readability-static-accessed-through-instance,
+  -bugprone-easily-swappable-parameters,
+  -bugprone-unchecked-optional-access,
+  -bugprone-unhandled-exception-at-new,
+  -cppcoreguidelines-special-member-functions,
+  -cppcoreguidelines-avoid-magic-numbers,
+  -cppcoreguidelines-non-private-member-variables-in-classes,
+  -cppcoreguidelines-prefer-member-initializer,
+  -cppcoreguidelines-missing-std-forward,
+  -cppcoreguidelines-narrowing-conversions,
+  -cppcoreguidelines-avoid-non-const-global-variables,
+  -cppcoreguidelines-pro-type-reinterpret-cast,
+  -cppcoreguidelines-pro-type-union-access,
+  -cppcoreguidelines-pro-bounds-constant-array-index,
+  -cppcoreguidelines-owning-memory,
+  -misc-non-private-member-variables-in-classes,
+  -misc-no-recursion,
+  -misc-const-correctness,
+  -misc-use-anonymous-namespace,
+  -misc-include-cleaner
+
+
+# Also check the header files
+HeaderFilterRegex: ".*"
+
+
+# List of warnings to treat as errors during the build
+WarningsAsErrors: >
+  clang-analyzer-*,
+  portability-*,
+  bugprone-assignment-in-if-condition,
+  bugprone-copy-constructor-init,
+  bugprone-dangling-handle,
+  bugprone-forwarding-reference-overload,
+  bugprone-incorrect-roundings,
+  bugprone-move-forwarding-reference,
+  bugprone-reserved-identifier,
+  bugprone-undefined-memory-manipulation,
+  bugprone-use-after-move,
+  google-default-arguments,
+  google-build-namespaces,
+  performance-move-const-arg,
+  performance-no-automatic-move,
+  performance-move-constructor-init,
+  readability-container-contains,
+  readability-deleted-default,
+  readability-misleading-indentation,
+  readability-static-definition-in-anonymous-namespace,
+  cppcoreguidelines-interfaces-global-init,
+  cppcoreguidelines-init-variables,
+  cppcoreguidelines-pro-type-member-init,
+  cppcoreguidelines-virtual-class-destructor,
+  cppcoreguidelines-missing-std-forward,
+  misc-definitions-in-headers,
+  misc-throw-by-value-catch-by-reference
+
+
+# Specify options for the checks where the default isnt good
+CheckOptions:
+  - { key: hicpp-signed-bitwise.IgnorePositiveIntegerLiterals,				value: true }
+  - { key: readability-implicit-bool-conversion.AllowIntegerConditions,		value: true }
+  - { key: readability-implicit-bool-conversion.AllowPointerConditions,		value: true }
+  - { key: readability-simplify-boolean-expr.SimplifyDeMorgan,              value: false }
+  - { key: readability-braces-around-statements.ShortStatementLines,		value: 2 }
+  - { key: bugprone-narrowing-conversions.IgnoreConversionFromTypes,		value: difference_type;ptrdiff_t;size_type;size_t;bool }
+  - { key: bugprone-easily-swappable-parameters.ModelImplicitConversions,	value: false }
+  - { key: performance-unnecessary-value-param.AllowedTypes,                value: iterator* }
+  - { key: cppcoreguidelines-macro-usage.AllowedRegexp,						value: GAPP_* }

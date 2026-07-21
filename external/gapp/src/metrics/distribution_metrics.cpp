@@ -1,0 +1,85 @@
+/* Copyright (c) 2023 Krisztián Rugási. Subject to the MIT License. */
+
+#include "distribution_metrics.hpp"
+#include "pop_stats.hpp"
+#include "../core/ga_info.hpp"
+#include "../core/population.hpp"
+#include "../utility/math.hpp"
+#include "../utility/utility.hpp"
+#include <utility>
+
+namespace gapp::metrics
+{
+    void NadirPoint::initialize(const GaInfo& ga)
+    {
+        data_.clear();
+        data_.reserve(ga.max_gen(), ga.num_objectives());
+    }
+
+    void NadirPoint::update(const GaInfo& ga)
+    {
+        GAPP_ASSERT(ga.population_size() > 0);
+
+        const auto& fitness_matrix = ga.fitness_matrix();
+        data_.append_row(detail::findNadirPoint(fitness_matrix));
+    }
+
+
+    Hypervolume::Hypervolume(FitnessVector ref_point) noexcept :
+        ref_point_(std::move(ref_point))
+    {}
+
+    void Hypervolume::initialize(const GaInfo& ga)
+    {
+        GAPP_ASSERT(ref_point_.size() == ga.num_objectives());
+
+        data_.clear();
+        data_.reserve(ga.max_gen());
+    }
+
+    void Hypervolume::update(const GaInfo& ga)
+    {
+        GAPP_ASSERT(ref_point_.size() == ga.num_objectives());
+
+        const auto& fitness_matrix = ga.fitness_matrix();
+        data_.push_back(detail::hypervolume(fitness_matrix, ref_point_));
+    }
+
+
+    void AutoHypervolume::initialize(const GaInfo& ga)
+    {
+        data_.clear();
+        data_.reserve(ga.max_gen());
+
+        ideal_points_.clear();
+        ideal_points_.reserve(ga.max_gen(), ga.num_objectives());
+
+        worst_point_ = FitnessVector(ga.num_objectives(), math::inf<double>);
+    }
+
+    void AutoHypervolume::update(const GaInfo& ga)
+    {
+        const auto& fitness_matrix = ga.fitness_matrix();
+
+        FitnessVector worst_point = detail::minFitness(fitness_matrix.begin(), fitness_matrix.end());
+        FitnessVector ideal_point = detail::maxFitness(fitness_matrix.begin(), fitness_matrix.end());
+
+        FitnessVector prev_worst_point = worst_point_;
+        detail::elementwise_min(worst_point_, worst_point, detail::inplace_t{});
+
+        if (worst_point_ != prev_worst_point)
+        {
+            for (size_t i = 0; i < data_.size(); i++)
+            {
+                const double old_vol = math::volumeBetween(ideal_points_[i], prev_worst_point);
+                const double new_vol = math::volumeBetween(ideal_points_[i], worst_point_);
+
+                data_[i] += (new_vol - old_vol);
+            }
+        }
+
+        data_.push_back(detail::hypervolume(fitness_matrix, worst_point_));
+        ideal_points_.append_row(std::move(ideal_point));
+    }
+
+} // namespace gapp::metrics

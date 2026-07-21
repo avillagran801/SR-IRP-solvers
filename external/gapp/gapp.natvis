@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+<Type Name="gapp::detail::Matrix&lt;*,*&gt;">
+  <DisplayString>{{ {{ size = {nrows_}x{ncols_} }} }}</DisplayString>
+  <Expand>
+	<Item Name="[nrows]">nrows_</Item>
+	<Item Name="[ncols]">ncols_</Item>
+    <CustomListItems>
+      <Variable Name="row" InitialValue="0"/>
+      <Loop Condition="row  &lt; nrows_">
+        <Item Name="[row {row}]">&amp;data_[row * ncols_],[ncols_]nag</Item>
+        <Exec>row++</Exec>
+      </Loop>
+    </CustomListItems>
+  </Expand>
+</Type>
+
+<Type Name="gapp::small_vector&lt;*,*,*&gt;">
+	<DisplayString>{{ {{ size = { last_ - first_ }, capacity = { last_alloc_ - first_ } }} }}</DisplayString>
+	<Expand>
+		<ArrayItems>
+			<Size>last_ - first_</Size>
+			<ValuePointer>first_</ValuePointer>
+		</ArrayItems>
+	</Expand>
+</Type>
+
+<Type Name="gapp::detail::dynamic_bitset">
+	<DisplayString>
+		{{ {{ size = { size_ }, capacity = { block_size * (blocks_.last_alloc_ - blocks_.first_) } }} }}
+	</DisplayString>
+	<Expand>
+		<IndexListItems>
+			<Size>size_</Size>
+			<ValueNode>(bool)(blocks_.first_[$i / block_size] &amp; (block_type(1) &lt;&lt; ($i % block_size)))</ValueNode>
+		</IndexListItems>
+	</Expand>
+</Type>
+
+<Type Name="gapp::detail::circular_buffer&lt;*,*&gt;">
+	<DisplayString>
+		{{ {{ size = { size_ }, capacity = { capacity_ } }} }}
+	</DisplayString>
+	<Expand>
+		<IndexListItems>
+			<Size>size_</Size>
+			<ValueNode>*(buffer_ + (first_ + $i &gt;= capacity_ ? first_ + $i - capacity_ : first_ + $i))</ValueNode>
+		</IndexListItems>
+	</Expand>
+</Type>
+
+<Type Name="gapp::detail::base_view&lt;*&gt;">
+	<DisplayString>
+		{{ {{ size = { (last_.ptr_ - first_.ptr_) / first_.step_ } }} }}
+	</DisplayString>
+	<Expand>
+		<IndexListItems>
+			<Size>(last_.ptr_ - first_.ptr_) / first_.step_</Size>
+			<ValueNode>*($T1*)(first_.ptr_ + $i * first_.step_)</ValueNode>
+		</IndexListItems>
+	</Expand>
+</Type>
+
+</AutoVisualizer>

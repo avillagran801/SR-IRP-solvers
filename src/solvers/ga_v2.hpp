@@ -1,0 +1,44 @@
+#pragma once
+
+#include <vector>
+#include "common/SolverResult.hpp"
+
+namespace solvers
+{
+  /**
+   * @brief Executes the Version 2 Genetic Algorithm (GA) solver.
+   *
+   * This specific solver pipeline is built around cumulative historical tracking. It combines:
+   * - **Multi-Period Strategy:** Beam Search PrevProfit (evaluates and truncates nodes based on
+   *   their total accumulated profit across the time horizon, rather than isolated daily performance).
+   * - **Daily Algorithm:** Genetic Algorithm PrevProfit variation.
+   * - **Decoder:** Greedy Decoder PrevProfit (injects accumulated past utility into the chromosome evaluation).
+   *
+   * @param instance_name The relative or absolute file path to the problem instance text file.
+   * @param max_time_seconds Total multi-period time budget in seconds (default: 90).
+   * @param beam_width Number of candidate states to preserve per day in the Beam Search (default: 2).
+   * @param population_size Number of individuals (chromosomes) in the population (default: 20).
+   * @param selection_method Identifier for the parent selection strategy (0: Tournament, 1: Roulette, 2: Sigma, 3: Boltzmann) (default: 1).
+   * @param replacement_method Identifier for the generational replacement strategy (0: KeepBest, 1: KeepChildren, 2: Elitism) (default: 0).
+   * @param crossover Identifier for the crossover operator to use (0: Order1, 1: Order2, 2: Position, 3: Edge, 4: Partially Mapped) (default: 3).
+   * @param mutation Identifier for the mutation operator to use (0: Inversion, 1: Swap2, 2: Swap3, 3: Shuffle, 4: Shift) (default: 1).
+   * @param crossover_rate Probability (0.0 to 1.0) of applying crossover to selected parents (default: 0.61).
+   * @param mutation_rate Probability (0.0 to 1.0) of mutating an offspring (default: 0.92).
+   * @param tuning If true, suppresses standard console output and prints a minimal format for tuning scripts (default: false).
+   *
+   * @return common::SolverResult An object containing the decoded final routes, multi-period inventory states,
+   *                              cumulative utility metrics, and execution time.
+   */
+  common::SolverResult RunGAV2(
+      std::string instance_name,
+      int max_time_seconds = 90,
+      int beam_width = 2,
+      int population_size = 20,
+      int selection_method = 1,
+      int replacement_method = 0,
+      int crossover = 3,
+      int mutation = 1,
+      float crossover_rate = 0.61f,
+      float mutation_rate = 0.92f,
+      bool tuning = false);
+}
