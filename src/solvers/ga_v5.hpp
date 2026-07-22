@@ -23,7 +23,7 @@ namespace solvers
    * @param future_effect_weight Multiplier determining how heavily the potential future missing
    *                             inventory penalty affects the day's sorting score (default 0.29).
    * @param population_size Number of individuals (chromosomes) in the population (default 20).
-   * @param selection_method Identifier for the parent selection strategy (0: Tournament, 1: Roulette, 2: Sigma, 3: Boltzmann) (default 2).
+   * @param selection_method Identifier for the parent selection strategy (0: Tournament, 1: Roulette, 2: Rank, 3: Sigma, 4: Boltzmann) (default 2).
    * @param replacement_method Identifier for the generational replacement strategy (0: KeepBest, 1: KeepChildren, 2: Elitism) (default 0).
    * @param crossover Identifier for the crossover operator to use (0: Order1, 1: Order2, 2: Position, 3: Edge, 4: Partially Mapped) (default 4).
    * @param mutation Identifier for the mutation operator to use (0: Inversion, 1: Swap2, 2: Swap3, 3: Shuffle, 4: Shift) (default 1).

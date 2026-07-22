@@ -13,7 +13,7 @@ namespace daily_solver
   struct GAConfigPrevProfit
   {
     int population_size;    /**< Number of individuals (chromosomes) in the population. */
-    int selection_method;   /**< Identifier for the parent selection strategy (0: Tournament, 1: Roulette, 2: Sigma, 3: Boltzmann). */
+    int selection_method;   /**< Identifier for the parent selection strategy (0: Tournament, 1: Roulette, 2: Rank, 3: Sigma, 4: Boltzmann). */
     int replacement_method; /**< Identifier for the generational replacement strategy (0: KeepBest, 1: KeepChildren, 2: Elitism). */
     int crossover;          /**< Identifier for the crossover operator to use (0: Order1, 1: Order2, 2: Position, 3: Edge, 4: Partially Mapped). */
     int mutation;           /**< Identifier for the mutation operator to use (0: Inversion, 1: Swap2, 2: Swap3, 3: Shuffle, 4: Shift). */
