@@ -3,6 +3,10 @@
 #include <vector>
 #include "common/SolverResult.hpp"
 
+/**
+ * @namespace solvers
+ * @brief Contains all daily routing algorithms (ACO and GA).
+ */
 namespace solvers
 {
   /**

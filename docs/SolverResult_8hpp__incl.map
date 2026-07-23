@@ -1,0 +1,16 @@
+<map id="src/common/SolverResult.hpp" name="src/common/SolverResult.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="14,5,230,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="89,225,152,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,33,44,51,28,64,16,80,9,99,9,117,16,136,27,155,58,189,92,215,89,219,55,192,23,158,11,139,4,118,4,98,11,77,25,60,42,47,78,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="26,79,89,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,33,79,70,75,67,109,29"/>
+<area shape="rect" id="Node000004" href="$types_8hpp.html" title=" " alt="" coords="114,79,260,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,29,169,67,165,70,130,33"/>
+<area shape="rect" id="Node000005" href="$instance_8hpp.html" title=" " alt="" coords="158,152,325,177"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="198,28,240,46,259,60,274,77,280,94,278,111,263,142,258,140,273,109,275,94,270,80,255,64,238,51,196,33"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="180,106,149,153,128,213,123,211,144,151,175,103"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="198,103,226,140,222,143,194,106"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="223,180,153,221,150,216,221,175"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="212,225,271,251"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="244,178,244,212,239,212,239,178"/>
+</map>

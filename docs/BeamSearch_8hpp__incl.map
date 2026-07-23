@@ -1,0 +1,19 @@
+<map id="src/multiperiod/BeamSearch.hpp" name="src/multiperiod/BeamSearch.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="17,5,251,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,299,68,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,32,92,83,54,153,40,188,33,226,32,256,34,285,29,285,26,256,27,225,35,187,49,151,88,80,123,29"/>
+<area shape="rect" id="Node000003" href="$types_8hpp.html" title=" " alt="" coords="63,152,210,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,31,139,138,134,138,132,31"/>
+<area shape="rect" id="Node000006" href="$DailyInterface_8hpp.html" title=" " alt="" coords="171,79,350,104"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="156,28,229,69,227,74,153,33"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="106,180,73,199,58,211,46,227,36,256,36,285,30,285,31,255,41,224,54,208,70,194,103,175"/>
+<area shape="rect" id="Node000004" href="$instance_8hpp.html" title=" " alt="" coords="56,225,223,251"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="140,178,141,212,136,212,134,178"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="124,253,66,293,63,288,121,248"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="110,299,169,324"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="142,251,142,285,137,285,137,251"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="265,104,268,133,266,173,257,215,248,235,236,253,215,264,175,277,82,302,81,297,174,272,213,259,232,249,244,232,252,213,261,172,262,133,260,105"/>
+<area shape="poly" id="edge10_Node000006_Node000003" title=" " alt="" coords="242,106,170,147,167,143,239,102"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="299,152,385,177"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="275,102,320,141,317,145,272,106"/>
+</map>

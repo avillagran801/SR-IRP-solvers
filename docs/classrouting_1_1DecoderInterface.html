@@ -69,7 +69,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>routing</b></li><li class="navelem"><a class="el" href="classrouting_1_1DecoderInterface.html">DecoderInterface</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacerouting.html">routing</a></li><li class="navelem"><a class="el" href="classrouting_1_1DecoderInterface.html">DecoderInterface</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -103,6 +103,8 @@ Inheritance diagram for routing::DecoderInterface:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aa0ea84540146b9f17784ee830a8d807a" id="r_aa0ea84540146b9f17784ee830a8d807a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrouting_1_1DecoderInterface.html#aa0ea84540146b9f17784ee830a8d807a">~DecoderInterface</a> ()=default</td></tr>
+<tr class="separator:aa0ea84540146b9f17784ee830a8d807a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e762a0c89fbebceb4202d8a4726ffd7" id="r_a3e762a0c89fbebceb4202d8a4726ffd7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structtypes_1_1DaySolution.html">types::DaySolution</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrouting_1_1DecoderInterface.html#a3e762a0c89fbebceb4202d8a4726ffd7">decode</a> (const std::vector&lt; size_t &gt; &amp;sequence, const <a class="el" href="structtypes_1_1DayContext.html">types::DayContext</a> &amp;ctx) const =0</td></tr>
 <tr class="memdesc:a3e762a0c89fbebceb4202d8a4726ffd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates an abstract client sequence into a complete daily solution.  <br /></td></tr>
 <tr class="separator:a3e762a0c89fbebceb4202d8a4726ffd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,7 +112,33 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract base class for all sequence decoders. </p>
 <p>A decoder acts as the bridge between a meta-heuristic algorithm and the actual business logic of the problem. It takes a raw sequence of client IDs and translates it into a concrete, evaluated routing and inventory schedule. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa0ea84540146b9f17784ee830a8d807a" name="aa0ea84540146b9f17784ee830a8d807a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0ea84540146b9f17784ee830a8d807a">&#9670;&#160;</a></span>~DecoderInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual routing::DecoderInterface::~DecoderInterface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3e762a0c89fbebceb4202d8a4726ffd7" name="a3e762a0c89fbebceb4202d8a4726ffd7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e762a0c89fbebceb4202d8a4726ffd7">&#9670;&#160;</a></span>decode()</h2>
 

@@ -21,8 +21,7 @@ namespace solvers
       int crossover,
       int mutation,
       float crossover_rate,
-      float mutation_rate,
-      bool tuning)
+      float mutation_rate)
   {
     // Read and format the instance
     instance::InstanceSolverFormat instance = instance::readInstance(instance_name);

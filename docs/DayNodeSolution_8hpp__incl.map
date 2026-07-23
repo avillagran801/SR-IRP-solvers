@@ -1,0 +1,13 @@
+<map id="src/multiperiod/DayNodeSolution.hpp" name="src/multiperiod/DayNodeSolution.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,271,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="103,225,165,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,32,121,54,111,79,108,115,111,151,127,212,122,213,106,152,102,115,106,78,116,51,128,30"/>
+<area shape="rect" id="Node000003" href="$types_8hpp.html" title=" " alt="" coords="121,79,267,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,29,179,66,174,69,145,33"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="189,105,163,153,143,212,138,211,158,151,184,103"/>
+<area shape="rect" id="Node000004" href="$instance_8hpp.html" title=" " alt="" coords="172,152,339,177"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="206,103,238,140,234,143,202,106"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="237,180,167,221,164,216,234,175"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="226,225,285,251"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="258,178,258,212,253,212,253,178"/>
+</map>

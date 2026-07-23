@@ -1,0 +1,15 @@
+<map id="src/daily/DailyInterface.hpp" name="src/daily/DailyInterface.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,207,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="95,225,157,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,33,70,53,52,80,50,91,53,103,64,135,79,164,111,213,106,216,74,167,59,137,47,105,45,91,48,78,66,50,88,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="63,79,149,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,31,109,65,103,65,103,31"/>
+<area shape="rect" id="Node000004" href="$types_8hpp.html" title=" " alt="" coords="174,79,321,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="130,28,213,70,211,75,128,33"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="220,106,186,126,155,154,140,182,132,212,127,211,135,181,151,150,183,121,217,102"/>
+<area shape="rect" id="Node000005" href="$instance_8hpp.html" title=" " alt="" coords="164,152,331,177"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="250,104,250,138,245,138,245,104"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="229,180,159,221,156,216,226,175"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="218,225,277,251"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="250,178,250,212,245,212,245,178"/>
+</map>

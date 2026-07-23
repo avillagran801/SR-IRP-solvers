@@ -7,5 +7,7 @@ var searchData=
   ['total_5fday_5fmissed_5fschedules_4',['total_day_missed_schedules',['../structtypes_1_1DaySolution.html#a6cd5d57eca9e76d9ed6e1d894505aa01',1,'types::DaySolution']]],
   ['total_5fday_5fmissing_5finventory_5',['total_day_missing_inventory',['../structtypes_1_1DaySolution.html#adc2bf9831424c4319c307db42bece1e0',1,'types::DaySolution']]],
   ['total_5fday_5frestocked_5fproducts_6',['total_day_restocked_products',['../structtypes_1_1DaySolution.html#aae98b6e49c4c1b1a3ce8c2657396360f',1,'types::DaySolution']]],
-  ['total_5fday_5futility_7',['total_day_utility',['../structtypes_1_1DaySolution.html#aa973ffb73f5135b76f41098fdab8d6a6',1,'types::DaySolution']]]
+  ['total_5fday_5futility_7',['total_day_utility',['../structtypes_1_1DaySolution.html#aa973ffb73f5135b76f41098fdab8d6a6',1,'types::DaySolution']]],
+  ['types_8',['types',['../namespacetypes.html',1,'']]],
+  ['types_2ehpp_9',['types.hpp',['../types_8hpp.html',1,'']]]
 ];

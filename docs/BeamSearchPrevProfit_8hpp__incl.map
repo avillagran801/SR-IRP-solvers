@@ -1,0 +1,19 @@
+<map id="src/multiperiod/BeamSearchPrevProfit.hpp" name="src/multiperiod/BeamSearchPrevProfit.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="31,5,237,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,313,68,339"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,47,98,82,72,128,48,183,33,240,32,271,34,299,29,300,26,271,27,240,42,181,67,126,94,79,117,44"/>
+<area shape="rect" id="Node000003" href="$types_8hpp.html" title=" " alt="" coords="63,167,210,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,46,139,153,134,153,132,46"/>
+<area shape="rect" id="Node000006" href="$DailyInterface_8hpp.html" title=" " alt="" coords="171,93,350,119"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="166,43,232,84,229,88,163,48"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="106,195,73,213,58,226,46,241,36,270,36,300,30,300,31,270,41,239,54,222,70,209,103,190"/>
+<area shape="rect" id="Node000004" href="$instance_8hpp.html" title=" " alt="" coords="56,240,223,265"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="140,192,141,226,136,227,134,192"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="124,268,66,307,63,303,121,263"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="110,313,169,339"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="142,266,142,300,137,300,137,266"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="265,119,268,148,266,187,257,229,248,249,236,267,215,278,175,291,82,316,81,311,174,286,213,273,232,263,244,247,252,228,261,187,262,148,260,119"/>
+<area shape="poly" id="edge10_Node000006_Node000003" title=" " alt="" coords="242,121,170,162,167,157,239,116"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="299,167,385,192"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="275,117,320,156,317,160,272,121"/>
+</map>

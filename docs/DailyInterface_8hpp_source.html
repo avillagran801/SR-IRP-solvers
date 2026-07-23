@@ -81,13 +81,13 @@ $(document).ready(function() { init_codefold(0); });
   <div class="headertitle"><div class="title">DailyInterface.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<a href="DailyInterface_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;common/types.hpp&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="types_8hpp.html">common/types.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>daily_solver</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedaily__solver.html">daily_solver</a></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
 <div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structdaily__solver_1_1DailyResult.html">   17</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structdaily__solver_1_1DailyResult.html">DailyResult</a></div>
@@ -97,15 +97,18 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  };</div>
 </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">using </span>SolverAlgorithm = std::function&lt;std::vector&lt;DailyResult&gt;(</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="namespacedaily__solver.html#ae099fe93e4c39d39f9b61253780a03cf">   36</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="namespacedaily__solver.html#ae099fe93e4c39d39f9b61253780a03cf">SolverAlgorithm</a> = std::function&lt;std::vector&lt;DailyResult&gt;(</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structtypes_1_1DayContext.html">types::DayContext</a> &amp;ctx,</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      <span class="keywordtype">double</span> time_limit_seconds)&gt;;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+<div class="ttc" id="anamespacedaily__solver_html"><div class="ttname"><a href="namespacedaily__solver.html">daily_solver</a></div><div class="ttdef"><b>Definition</b> ACO.cpp:12</div></div>
+<div class="ttc" id="anamespacedaily__solver_html_ae099fe93e4c39d39f9b61253780a03cf"><div class="ttname"><a href="namespacedaily__solver.html#ae099fe93e4c39d39f9b61253780a03cf">daily_solver::SolverAlgorithm</a></div><div class="ttdeci">std::function&lt; std::vector&lt; DailyResult &gt;(const types::DayContext &amp;ctx, double time_limit_seconds)&gt; SolverAlgorithm</div><div class="ttdoc">A generic function signature for any daily routing solver.</div><div class="ttdef"><b>Definition</b> DailyInterface.hpp:38</div></div>
 <div class="ttc" id="astructdaily__solver_1_1DailyResult_html"><div class="ttname"><a href="structdaily__solver_1_1DailyResult.html">daily_solver::DailyResult</a></div><div class="ttdoc">Pairs a raw generated sequence with its fully decoded solution.</div><div class="ttdef"><b>Definition</b> DailyInterface.hpp:18</div></div>
 <div class="ttc" id="astructdaily__solver_1_1DailyResult_html_a366171f20a87b237da783cd23d4d37f8"><div class="ttname"><a href="structdaily__solver_1_1DailyResult.html#a366171f20a87b237da783cd23d4d37f8">daily_solver::DailyResult::solution</a></div><div class="ttdeci">types::DaySolution solution</div><div class="ttdef"><b>Definition</b> DailyInterface.hpp:20</div></div>
 <div class="ttc" id="astructdaily__solver_1_1DailyResult_html_ada0f550ceb0df7a709526e102b6e451a"><div class="ttname"><a href="structdaily__solver_1_1DailyResult.html#ada0f550ceb0df7a709526e102b6e451a">daily_solver::DailyResult::sequence</a></div><div class="ttdeci">std::vector&lt; size_t &gt; sequence</div><div class="ttdef"><b>Definition</b> DailyInterface.hpp:19</div></div>
 <div class="ttc" id="astructtypes_1_1DayContext_html"><div class="ttname"><a href="structtypes_1_1DayContext.html">types::DayContext</a></div><div class="ttdoc">Represents the isolated problem state for a single specific day.</div><div class="ttdef"><b>Definition</b> types.hpp:17</div></div>
 <div class="ttc" id="astructtypes_1_1DaySolution_html"><div class="ttname"><a href="structtypes_1_1DaySolution.html">types::DaySolution</a></div><div class="ttdoc">Encapsulates the complete routing and inventory solution for a single day.</div><div class="ttdef"><b>Definition</b> types.hpp:93</div></div>
+<div class="ttc" id="atypes_8hpp_html"><div class="ttname"><a href="types_8hpp.html">types.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

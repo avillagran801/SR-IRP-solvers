@@ -81,21 +81,21 @@ $(document).ready(function() { init_codefold(0); });
   <div class="headertitle"><div class="title">SolverResult.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<a href="SolverResult_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;deque&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;common/types.hpp&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;common/instance.hpp&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="types_8hpp.html">common/types.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="instance_8hpp.html">common/instance.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>common</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecommon.html">common</a></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
 <div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classcommon_1_1SolverResult.html">   18</a></span>  <span class="keyword">class </span><a class="code hl_class" href="classcommon_1_1SolverResult.html">SolverResult</a></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    std::vector&lt;types::DaySolution&gt; solution;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_struct" href="structinstance_1_1InstanceSolverFormat.html">instance::InstanceSolverFormat</a> instance;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_struct" href="structinstance_1_1InstanceSolverFormat.html">instance::InstanceSolverFormat</a> <a class="code hl_namespace" href="namespaceinstance.html">instance</a>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    std::deque&lt;types::DayContext&gt; day_contexts;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">double</span> execution_time_seconds;</div>
@@ -140,7 +140,11 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclasscommon_1_1SolverResult_html_adfa078049eaf17941b8a1394df1ebafe"><div class="ttname"><a href="classcommon_1_1SolverResult.html#adfa078049eaf17941b8a1394df1ebafe">common::SolverResult::get_total_restocked</a></div><div class="ttdeci">int get_total_restocked() const</div><div class="ttdoc">Calculates the total amount of products restocked across the entire time horizon.</div><div class="ttdef"><b>Definition</b> SolverResult.cpp:57</div></div>
 <div class="ttc" id="aclasscommon_1_1SolverResult_html_ae849ff0d3114ad0eeb4f1bcf5d8c285e"><div class="ttname"><a href="classcommon_1_1SolverResult.html#ae849ff0d3114ad0eeb4f1bcf5d8c285e">common::SolverResult::validate</a></div><div class="ttdeci">bool validate(bool verbose=false) const</div><div class="ttdoc">Validates the mathematical and logical integrity of the solution.</div><div class="ttdef"><b>Definition</b> SolverResult.cpp:33</div></div>
 <div class="ttc" id="aclasscommon_1_1SolverResult_html_aec269d43fc54841cd17381f5d7eafe0a"><div class="ttname"><a href="classcommon_1_1SolverResult.html#aec269d43fc54841cd17381f5d7eafe0a">common::SolverResult::get_total_missing</a></div><div class="ttdeci">int get_total_missing() const</div><div class="ttdoc">Calculates the total accumulated missing inventory across all clients and days.</div><div class="ttdef"><b>Definition</b> SolverResult.cpp:67</div></div>
+<div class="ttc" id="ainstance_8hpp_html"><div class="ttname"><a href="instance_8hpp.html">instance.hpp</a></div></div>
+<div class="ttc" id="anamespacecommon_html"><div class="ttname"><a href="namespacecommon.html">common</a></div><div class="ttdef"><b>Definition</b> SolverResult.cpp:6</div></div>
+<div class="ttc" id="anamespaceinstance_html"><div class="ttname"><a href="namespaceinstance.html">instance</a></div><div class="ttdef"><b>Definition</b> instance.cpp:11</div></div>
 <div class="ttc" id="astructinstance_1_1InstanceSolverFormat_html"><div class="ttname"><a href="structinstance_1_1InstanceSolverFormat.html">instance::InstanceSolverFormat</a></div><div class="ttdoc">Holds all static parameters, capacities, and demands for the multi-period routing problem.</div><div class="ttdef"><b>Definition</b> instance.hpp:15</div></div>
+<div class="ttc" id="atypes_8hpp_html"><div class="ttname"><a href="types_8hpp.html">types.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

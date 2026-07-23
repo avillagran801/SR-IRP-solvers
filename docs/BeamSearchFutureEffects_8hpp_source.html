@@ -81,22 +81,28 @@ $(document).ready(function() { init_codefold(0); });
   <div class="headertitle"><div class="title">BeamSearchFutureEffects.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<a href="BeamSearchFutureEffects_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;common/types.hpp&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;daily/DailyInterface.hpp&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="types_8hpp.html">common/types.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="DailyInterface_8hpp.html">daily/DailyInterface.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>multi_period</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemulti__period.html">multi_period</a></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  std::vector&lt;types::DaySolution&gt; RunBeamSearchFutureEffects(</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structinstance_1_1InstanceSolverFormat.html">instance::InstanceSolverFormat</a> &amp;instance,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  std::vector&lt;types::DaySolution&gt; <a class="code hl_function" href="namespacemulti__period.html#a557317100aedad294282c75e2b9541b6">RunBeamSearchFutureEffects</a>(</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structinstance_1_1InstanceSolverFormat.html">instance::InstanceSolverFormat</a> &amp;<a class="code hl_namespace" href="namespaceinstance.html">instance</a>,</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      <span class="keywordtype">int</span> beam_width,</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      <span class="keywordtype">float</span> future_effect_weight,</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="keywordtype">int</span> max_time_seconds,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      daily_solver::SolverAlgorithm daily_algorithm);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      <a class="code hl_typedef" href="namespacedaily__solver.html#ae099fe93e4c39d39f9b61253780a03cf">daily_solver::SolverAlgorithm</a> daily_algorithm);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+<div class="ttc" id="aDailyInterface_8hpp_html"><div class="ttname"><a href="DailyInterface_8hpp.html">DailyInterface.hpp</a></div></div>
+<div class="ttc" id="anamespacedaily__solver_html_ae099fe93e4c39d39f9b61253780a03cf"><div class="ttname"><a href="namespacedaily__solver.html#ae099fe93e4c39d39f9b61253780a03cf">daily_solver::SolverAlgorithm</a></div><div class="ttdeci">std::function&lt; std::vector&lt; DailyResult &gt;(const types::DayContext &amp;ctx, double time_limit_seconds)&gt; SolverAlgorithm</div><div class="ttdoc">A generic function signature for any daily routing solver.</div><div class="ttdef"><b>Definition</b> DailyInterface.hpp:38</div></div>
+<div class="ttc" id="anamespaceinstance_html"><div class="ttname"><a href="namespaceinstance.html">instance</a></div><div class="ttdef"><b>Definition</b> instance.cpp:11</div></div>
+<div class="ttc" id="anamespacemulti__period_html"><div class="ttname"><a href="namespacemulti__period.html">multi_period</a></div><div class="ttdef"><b>Definition</b> BeamSearch.cpp:8</div></div>
+<div class="ttc" id="anamespacemulti__period_html_a557317100aedad294282c75e2b9541b6"><div class="ttname"><a href="namespacemulti__period.html#a557317100aedad294282c75e2b9541b6">multi_period::RunBeamSearchFutureEffects</a></div><div class="ttdeci">std::vector&lt; types::DaySolution &gt; RunBeamSearchFutureEffects(const instance::InstanceSolverFormat &amp;instance, int beam_width, float future_effect_weight, int max_time_seconds, daily_solver::SolverAlgorithm daily_algorithm)</div><div class="ttdoc">Executes a Beam Search strategy with a look-ahead heuristic to anticipate future shortages.</div><div class="ttdef"><b>Definition</b> BeamSearchFutureEffects.cpp:9</div></div>
 <div class="ttc" id="astructinstance_1_1InstanceSolverFormat_html"><div class="ttname"><a href="structinstance_1_1InstanceSolverFormat.html">instance::InstanceSolverFormat</a></div><div class="ttdoc">Holds all static parameters, capacities, and demands for the multi-period routing problem.</div><div class="ttdef"><b>Definition</b> instance.hpp:15</div></div>
+<div class="ttc" id="atypes_8hpp_html"><div class="ttname"><a href="types_8hpp.html">types.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

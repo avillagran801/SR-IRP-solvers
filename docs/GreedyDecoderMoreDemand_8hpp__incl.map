@@ -1,0 +1,15 @@
+<map id="src/decoders/GreedyDecoderMoreDemand.hpp" name="src/decoders/GreedyDecoderMoreDemand.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,215,45"/>
+<area shape="rect" id="Node000002" href="$DecoderInterface_8hpp.html" title=" " alt="" coords="29,93,191,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,46,113,79,107,79,107,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="75,313,137,339"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,120,93,142,83,167,80,203,83,239,99,300,94,301,78,240,74,203,78,166,88,139,100,118"/>
+<area shape="rect" id="Node000004" href="$types_8hpp.html" title=" " alt="" coords="93,167,239,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="121,117,151,154,146,157,117,121"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="161,193,135,241,115,300,110,299,130,239,156,191"/>
+<area shape="rect" id="Node000005" href="$instance_8hpp.html" title=" " alt="" coords="144,240,311,265"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="178,191,210,228,206,231,174,194"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="209,268,139,309,136,304,206,263"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="198,313,257,339"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="230,266,230,300,225,300,225,266"/>
+</map>

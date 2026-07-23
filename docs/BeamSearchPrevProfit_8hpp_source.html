@@ -81,21 +81,27 @@ $(document).ready(function() { init_codefold(0); });
   <div class="headertitle"><div class="title">BeamSearchPrevProfit.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<a href="BeamSearchPrevProfit_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;common/types.hpp&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;daily/DailyInterface.hpp&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="types_8hpp.html">common/types.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="DailyInterface_8hpp.html">daily/DailyInterface.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>multi_period</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemulti__period.html">multi_period</a></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  std::vector&lt;types::DaySolution&gt; RunBeamSearchPrevProfit(</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structinstance_1_1InstanceSolverFormat.html">instance::InstanceSolverFormat</a> &amp;instance,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  std::vector&lt;types::DaySolution&gt; <a class="code hl_function" href="namespacemulti__period.html#a33e3578cbac698d7fe85184406a3a352">RunBeamSearchPrevProfit</a>(</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structinstance_1_1InstanceSolverFormat.html">instance::InstanceSolverFormat</a> &amp;<a class="code hl_namespace" href="namespaceinstance.html">instance</a>,</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      <span class="keywordtype">int</span> beam_width,</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <span class="keywordtype">int</span> max_time_seconds,</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      daily_solver::SolverAlgorithm daily_algorithm);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      <a class="code hl_typedef" href="namespacedaily__solver.html#ae099fe93e4c39d39f9b61253780a03cf">daily_solver::SolverAlgorithm</a> daily_algorithm);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+<div class="ttc" id="aDailyInterface_8hpp_html"><div class="ttname"><a href="DailyInterface_8hpp.html">DailyInterface.hpp</a></div></div>
+<div class="ttc" id="anamespacedaily__solver_html_ae099fe93e4c39d39f9b61253780a03cf"><div class="ttname"><a href="namespacedaily__solver.html#ae099fe93e4c39d39f9b61253780a03cf">daily_solver::SolverAlgorithm</a></div><div class="ttdeci">std::function&lt; std::vector&lt; DailyResult &gt;(const types::DayContext &amp;ctx, double time_limit_seconds)&gt; SolverAlgorithm</div><div class="ttdoc">A generic function signature for any daily routing solver.</div><div class="ttdef"><b>Definition</b> DailyInterface.hpp:38</div></div>
+<div class="ttc" id="anamespaceinstance_html"><div class="ttname"><a href="namespaceinstance.html">instance</a></div><div class="ttdef"><b>Definition</b> instance.cpp:11</div></div>
+<div class="ttc" id="anamespacemulti__period_html"><div class="ttname"><a href="namespacemulti__period.html">multi_period</a></div><div class="ttdef"><b>Definition</b> BeamSearch.cpp:8</div></div>
+<div class="ttc" id="anamespacemulti__period_html_a33e3578cbac698d7fe85184406a3a352"><div class="ttname"><a href="namespacemulti__period.html#a33e3578cbac698d7fe85184406a3a352">multi_period::RunBeamSearchPrevProfit</a></div><div class="ttdeci">std::vector&lt; types::DaySolution &gt; RunBeamSearchPrevProfit(const instance::InstanceSolverFormat &amp;instance, int beam_width, int max_time_seconds, daily_solver::SolverAlgorithm daily_algorithm)</div><div class="ttdoc">Executes a Beam Search strategy that tracks and evaluates based on accumulated multi-period profit.</div><div class="ttdef"><b>Definition</b> BeamSearchPrevProfit.cpp:9</div></div>
 <div class="ttc" id="astructinstance_1_1InstanceSolverFormat_html"><div class="ttname"><a href="structinstance_1_1InstanceSolverFormat.html">instance::InstanceSolverFormat</a></div><div class="ttdoc">Holds all static parameters, capacities, and demands for the multi-period routing problem.</div><div class="ttdef"><b>Definition</b> instance.hpp:15</div></div>
+<div class="ttc" id="atypes_8hpp_html"><div class="ttname"><a href="types_8hpp.html">types.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
