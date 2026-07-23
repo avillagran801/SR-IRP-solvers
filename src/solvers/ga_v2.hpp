@@ -24,7 +24,6 @@ namespace solvers
    * @param mutation Identifier for the mutation operator to use (0: Inversion, 1: Swap2, 2: Swap3, 3: Shuffle, 4: Shift) (default: 1).
    * @param crossover_rate Probability (0.0 to 1.0) of applying crossover to selected parents (default: 0.61).
    * @param mutation_rate Probability (0.0 to 1.0) of mutating an offspring (default: 0.92).
-   * @param tuning If true, suppresses standard console output and prints a minimal format for tuning scripts (default: false).
    *
    * @return common::SolverResult An object containing the decoded final routes, multi-period inventory states,
    *                              cumulative utility metrics, and execution time.

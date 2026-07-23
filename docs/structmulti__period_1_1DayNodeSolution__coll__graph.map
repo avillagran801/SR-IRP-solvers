@@ -1,0 +1,5 @@
+<map id="multi_period::DayNodeSolution" name="multi_period::DayNodeSolution">
+<area shape="rect" id="Node000001" title="Represents a single candidate state (node) in the multi&#45;period search tree." alt="" coords="5,93,231,119"/>
+<area shape="rect" id="Node000002" href="$structtypes_1_1DaySolution.html" title="Encapsulates the complete routing and inventory solution for a single day." alt="" coords="45,5,191,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,45,121,93,115,93,115,45"/>
+</map>

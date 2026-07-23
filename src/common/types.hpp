@@ -18,20 +18,20 @@ namespace types
     const std::vector<std::vector<int>> start_inventory; /**< Inventory levels at the beginning of this day. */
     const std::vector<std::vector<int>> demand;          /**< Expected demand for this specific day. */
 
-    const int num_clients;
-    const int num_workers;
-    const int num_products;
-    const int T;
-    const float L;
-    const float delta;
-    const float theta;
-    const std::vector<std::vector<float>> &time_matrix;
-    const std::vector<int> &utility;
-    const std::vector<float> &restock_time;
-    const std::vector<float> &starting_hour;
-    const std::vector<float> &finishing_hour;
-    const std::vector<std::vector<int>> &max_inventory;
-    const int prev_utilities; /**< Accumulated utility from all previous days. */
+    const int num_clients;                              /**< Total number of client nodes to serve. */
+    const int num_workers;                              /**< Total number of workers available per day. */
+    const int num_products;                             /**< Number of distinct product types. */
+    const int T;                                        /**< Total number of days in the planning horizon. */
+    const float L;                                      /**< Maximum working hours allowed per worker per day. */
+    const float delta;                                  /**< Penalty coefficient applied per unit of missing inventory. */
+    const float theta;                                  /**< Penalty coefficient applied per missed delivery schedule. */
+    const std::vector<std::vector<float>> &time_matrix; /**< Travel time matrix between all nodes (workers and clients). */
+    const std::vector<int> &utility;                    /**< Profit or utility gained per unit of each product restocked. */
+    const std::vector<float> &restock_time;             /**< Time required to restock one unit of each product type. */
+    const std::vector<float> &starting_hour;            /**< Earliest allowed service start time for each client. */
+    const std::vector<float> &finishing_hour;           /**< Latest allowed service finish time for each client. */
+    const std::vector<std::vector<int>> &max_inventory; /**< Maximum shelf capacity [client_id][product_id]. */
+    const int prev_utilities;                           /**< Accumulated utility from all previous days. */
 
     /**
      * @brief Constructs a new DayContext object from the global instance and current day's state.

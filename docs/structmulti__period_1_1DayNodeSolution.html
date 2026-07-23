@@ -80,33 +80,163 @@ $(function() {
   <div class="headertitle"><div class="title">multi_period::DayNodeSolution Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents a single candidate state (node) in the multi-period search tree.  
+ <a href="structmulti__period_1_1DayNodeSolution.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="DayNodeSolution_8hpp_source.html">DayNodeSolution.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for multi_period::DayNodeSolution:</div>
 <div class="dyncontent">
 <div class="center"><img src="structmulti__period_1_1DayNodeSolution__coll__graph.png" border="0" usemap="#amulti__period_1_1DayNodeSolution_coll__map" alt="Collaboration graph"/></div>
+<map name="amulti__period_1_1DayNodeSolution_coll__map" id="amulti__period_1_1DayNodeSolution_coll__map">
+<area shape="rect" title="Represents a single candidate state (node) in the multi&#45;period search tree." alt="" coords="5,93,231,119"/>
+<area shape="rect" href="structtypes_1_1DaySolution.html" title="Encapsulates the complete routing and inventory solution for a single day." alt="" coords="45,5,191,31"/>
+<area shape="poly" title=" " alt="" coords="121,45,121,93,115,93,115,45"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa802a55c5bc2f64d49b001e2b72f6736" id="r_aa802a55c5bc2f64d49b001e2b72f6736"><td class="memItemLeft" align="right" valign="top"><a id="aa802a55c5bc2f64d49b001e2b72f6736" name="aa802a55c5bc2f64d49b001e2b72f6736"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DayNodeSolution</b> (int id, int parent, std::vector&lt; size_t &gt; sequence, <a class="el" href="structtypes_1_1DaySolution.html">types::DaySolution</a> solution)</td></tr>
+<tr class="memitem:aa802a55c5bc2f64d49b001e2b72f6736" id="r_aa802a55c5bc2f64d49b001e2b72f6736"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmulti__period_1_1DayNodeSolution.html#aa802a55c5bc2f64d49b001e2b72f6736">DayNodeSolution</a> (int id, int parent, std::vector&lt; size_t &gt; sequence, <a class="el" href="structtypes_1_1DaySolution.html">types::DaySolution</a> solution)</td></tr>
+<tr class="memdesc:aa802a55c5bc2f64d49b001e2b72f6736"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new Day Node Solution object.  <br /></td></tr>
 <tr class="separator:aa802a55c5bc2f64d49b001e2b72f6736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a58f32aef68eb17001ace6b8f305e2374" id="r_a58f32aef68eb17001ace6b8f305e2374"><td class="memItemLeft" align="right" valign="top"><a id="a58f32aef68eb17001ace6b8f305e2374" name="a58f32aef68eb17001ace6b8f305e2374"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>node_id</b></td></tr>
+<tr class="memitem:a58f32aef68eb17001ace6b8f305e2374" id="r_a58f32aef68eb17001ace6b8f305e2374"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmulti__period_1_1DayNodeSolution.html#a58f32aef68eb17001ace6b8f305e2374">node_id</a></td></tr>
 <tr class="separator:a58f32aef68eb17001ace6b8f305e2374"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a9804c655a8daa3e668689ac0df901f" id="r_a1a9804c655a8daa3e668689ac0df901f"><td class="memItemLeft" align="right" valign="top"><a id="a1a9804c655a8daa3e668689ac0df901f" name="a1a9804c655a8daa3e668689ac0df901f"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>parent_id</b></td></tr>
+<tr class="memitem:a1a9804c655a8daa3e668689ac0df901f" id="r_a1a9804c655a8daa3e668689ac0df901f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmulti__period_1_1DayNodeSolution.html#a1a9804c655a8daa3e668689ac0df901f">parent_id</a></td></tr>
 <tr class="separator:a1a9804c655a8daa3e668689ac0df901f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada250fbd195e38c0862132010ea10929" id="r_ada250fbd195e38c0862132010ea10929"><td class="memItemLeft" align="right" valign="top"><a id="ada250fbd195e38c0862132010ea10929" name="ada250fbd195e38c0862132010ea10929"></a>
-std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>chromosome_sequence</b></td></tr>
+<tr class="memitem:ada250fbd195e38c0862132010ea10929" id="r_ada250fbd195e38c0862132010ea10929"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmulti__period_1_1DayNodeSolution.html#ada250fbd195e38c0862132010ea10929">chromosome_sequence</a></td></tr>
 <tr class="separator:ada250fbd195e38c0862132010ea10929"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55346cb89ed5a9c7cdc65aa38ee9a34e" id="r_a55346cb89ed5a9c7cdc65aa38ee9a34e"><td class="memItemLeft" align="right" valign="top"><a id="a55346cb89ed5a9c7cdc65aa38ee9a34e" name="a55346cb89ed5a9c7cdc65aa38ee9a34e"></a>
-<a class="el" href="structtypes_1_1DaySolution.html">types::DaySolution</a>&#160;</td><td class="memItemRight" valign="bottom"><b>decoded_solution</b></td></tr>
+<tr class="memitem:a55346cb89ed5a9c7cdc65aa38ee9a34e" id="r_a55346cb89ed5a9c7cdc65aa38ee9a34e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtypes_1_1DaySolution.html">types::DaySolution</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmulti__period_1_1DayNodeSolution.html#a55346cb89ed5a9c7cdc65aa38ee9a34e">decoded_solution</a></td></tr>
 <tr class="separator:a55346cb89ed5a9c7cdc65aa38ee9a34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a single candidate state (node) in the multi-period search tree. </p>
+<p>During the Beam Search process, multiple candidate solutions are generated for each day. This struct encapsulates a specific candidate, tracking its lineage to reconstruct the full multi-period path, the raw sequence generated by the daily meta-heuristic (GA/ACO), and the fully evaluated day's solution. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa802a55c5bc2f64d49b001e2b72f6736" name="aa802a55c5bc2f64d49b001e2b72f6736"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa802a55c5bc2f64d49b001e2b72f6736">&#9670;&#160;</a></span>DayNodeSolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">multi_period::DayNodeSolution::DayNodeSolution </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; size_t &gt;&#160;</td>
+          <td class="paramname"><em>sequence</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtypes_1_1DaySolution.html">types::DaySolution</a>&#160;</td>
+          <td class="paramname"><em>solution</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new Day Node Solution object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The unique identifier for this node. </td></tr>
+    <tr><td class="paramname">parent</td><td>The identifier of the parent node from the prior day. </td></tr>
+    <tr><td class="paramname">sequence</td><td>The raw sequence of clients generated by the daily algorithm. </td></tr>
+    <tr><td class="paramname">solution</td><td>The fully decoded and evaluated routing solution for this specific day. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ada250fbd195e38c0862132010ea10929" name="ada250fbd195e38c0862132010ea10929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada250fbd195e38c0862132010ea10929">&#9670;&#160;</a></span>chromosome_sequence</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;size_t&gt; multi_period::DayNodeSolution::chromosome_sequence</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The raw sequence of clients before decoding. </p>
+
+</div>
+</div>
+<a id="a55346cb89ed5a9c7cdc65aa38ee9a34e" name="a55346cb89ed5a9c7cdc65aa38ee9a34e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55346cb89ed5a9c7cdc65aa38ee9a34e">&#9670;&#160;</a></span>decoded_solution</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structtypes_1_1DaySolution.html">types::DaySolution</a> multi_period::DayNodeSolution::decoded_solution</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The fully evaluated routing, inventory, and utility data for this day. </p>
+
+</div>
+</div>
+<a id="a58f32aef68eb17001ace6b8f305e2374" name="a58f32aef68eb17001ace6b8f305e2374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58f32aef68eb17001ace6b8f305e2374">&#9670;&#160;</a></span>node_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int multi_period::DayNodeSolution::node_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Unique identifier for this node in the search tree. </p>
+
+</div>
+</div>
+<a id="a1a9804c655a8daa3e668689ac0df901f" name="a1a9804c655a8daa3e668689ac0df901f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a9804c655a8daa3e668689ac0df901f">&#9670;&#160;</a></span>parent_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int multi_period::DayNodeSolution::parent_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Identifier of the parent node from the previous day used to trace back the timeline. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/multiperiod/<a class="el" href="DayNodeSolution_8hpp_source.html">DayNodeSolution.hpp</a></li>
 </ul>

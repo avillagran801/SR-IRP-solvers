@@ -1,0 +1,5 @@
+<map id="routing::GreedyDecoderPrevProfit" name="routing::GreedyDecoderPrevProfit">
+<area shape="rect" id="Node000001" title="A greedy two&#45;pass decoder that incorporates historical multi&#45;period profit." alt="" coords="5,79,212,119"/>
+<area shape="rect" id="Node000002" href="$classrouting_1_1DecoderInterface.html" title="Abstract base class for all sequence decoders." alt="" coords="15,5,203,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,44,111,79,106,79,106,44"/>
+</map>

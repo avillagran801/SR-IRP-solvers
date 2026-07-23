@@ -99,5 +99,11 @@ namespace common
      * a single numerical value (the inverted profit) for automated parsing.
      */
     void print_summary(bool tuning = false) const;
+
+    /**
+     * @brief Prints a detailed breakdown of the routes day by day, worker by worker,
+     *        including the exact amount of each product restocked at every visit.
+     */
+    void print_routes() const;
   };
 }

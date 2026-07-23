@@ -13,5 +13,7 @@ int main(int argc, char *argv[])
 
   result4.print_summary();
 
+  result4.print_routes();
+
   return 0;
 }

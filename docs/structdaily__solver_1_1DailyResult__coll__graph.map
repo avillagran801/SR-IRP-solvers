@@ -1,0 +1,5 @@
+<map id="daily_solver::DailyResult" name="daily_solver::DailyResult">
+<area shape="rect" id="Node000001" title="Pairs a raw generated sequence with its fully decoded solution." alt="" coords="5,93,189,119"/>
+<area shape="rect" id="Node000002" href="$structtypes_1_1DaySolution.html" title="Encapsulates the complete routing and inventory solution for a single day." alt="" coords="25,5,170,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,45,100,93,95,93,95,45"/>
+</map>

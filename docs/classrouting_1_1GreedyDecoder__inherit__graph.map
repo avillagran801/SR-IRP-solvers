@@ -1,0 +1,5 @@
+<map id="routing::GreedyDecoder" name="routing::GreedyDecoder">
+<area shape="rect" id="Node000001" title="A heuristic decoder that builds routes using a two&#45;pass greedy strategy." alt="" coords="11,79,188,104"/>
+<area shape="rect" id="Node000002" href="$classrouting_1_1DecoderInterface.html" title="Abstract base class for all sequence decoders." alt="" coords="5,5,193,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,44,102,79,97,79,97,44"/>
+</map>

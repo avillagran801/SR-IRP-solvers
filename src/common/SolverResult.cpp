@@ -144,4 +144,57 @@ namespace common
                 << "=============================\n\n";
     }
   }
+
+  void SolverResult::print_routes() const
+  {
+    std::cout << "\n=== Detailed Routing Schedule ===\n";
+
+    for (size_t d = 0; d < solution.size(); ++d)
+    {
+      std::cout << "Day " << (d + 1) << ":\n";
+      const auto &day = solution[d];
+
+      for (size_t w = 0; w < day.routes.size(); ++w)
+      {
+        std::cout << "  Worker " << w << ": ";
+        const auto &route = day.routes[w];
+
+        if (route.empty())
+        {
+          std::cout << "No visits\n";
+          continue;
+        }
+
+        std::cout << "\n";
+        // Iterate through each visit in the worker's route
+        for (const auto &visit : route)
+        {
+          std::cout << "    -> Client " << visit.node_id << " | Restocked: [";
+
+          bool first_product = true;
+          for (size_t p = 0; p < visit.restocked_product.size(); ++p)
+          {
+            int amount = visit.restocked_product[p];
+            if (amount > 0)
+            {
+              if (!first_product)
+              {
+                std::cout << ", ";
+              }
+              std::cout << "P" << p << ": " << amount;
+              first_product = false;
+            }
+          }
+
+          if (first_product)
+          {
+            std::cout << "None";
+          }
+          std::cout << "]\n";
+        }
+      }
+      std::cout << "\n";
+    }
+    std::cout << "=================================\n\n";
+  }
 }
