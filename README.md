@@ -1,10 +1,15 @@
 # Shelf Replenishment Inventory Routing Problem (SR-IRP) Solvers
 
-C++ solvers designed to tackle multi-period worker routing and inventory management problems. This project combines meta-heuristic algorithms (Ant Colony Optimization and Genetic Algorithms) with customized greedy decoders and a Beam Search orchestrator to optimize long-term scheduling, demand fulfillment, and inventory levels.
+The SR-IRP Solvers are a set of C++ solvers designed to tackle multi-period worker routing and inventory management problems. This project combines meta-heuristic algorithms (Ant Colony Optimization and Genetic Algorithms) with customized greedy decoders and a Beam Search orchestrator to optimize long-term scheduling, demand fulfillment, and inventory levels.
 
 ## Features
 
 The solvers separate the daily routing logic from the multi-period orchestration, allowing for customizable pipelines (Versions 1 through 5 of both ACO and GA).
+
+### Multi-Period Orchestration (Beam Search)
+* **Standard Beam Search:** Truncates candidate states based on isolated daily utility.
+* **PrevProfit:** Tracks and evaluates based on long-term accumulated profit.
+* **FutureEffects:** A look-ahead heuristic that applies soft penalties to solutions that leave inventory vulnerable to stock-outs the next day.
 
 ### Daily Solvers
 * **Genetic Algorithm (GA):** Evolves a population of routing sequences over multiple generations.
@@ -16,11 +21,6 @@ Translates abstract sequences into concrete routing schedules and inventory stat
 * **PrevProfit:** Injects historical cumulative utility into the daily evaluation.
 * **MoreDemand:** Prioritizes high-volume products to ensure critical demand is met before time runs out.
 * **LessStock:** Dynamically prioritizes restocking products that are closest to a stock-out.
-
-### Multi-Period Orchestration (Beam Search)
-* **Standard Beam Search:** Truncates candidate states based on isolated daily utility.
-* **PrevProfit:** Tracks and evaluates based on long-term accumulated profit.
-* **FutureEffects:** A look-ahead heuristic that applies soft penalties to solutions that leave inventory vulnerable to stock-outs the next day.
 
 ## Prerequisites
 
@@ -60,9 +60,13 @@ You can run the generated example executable to test the solver against a specif
 
 To swap out algorithms, edit src/example.cpp to call a different solver version (e.g., solvers::RunACOV5() instead of solvers::RunGAV4()) and recompile.
 
+## Documentation
+
+The documentation can be found at [https://avillagran801.github.io/SR-IRP-solvers/](https://avillagran801.github.io/SR-IRP-solvers/).
+
 ## Credits
 
-The Genetic Algorithm variations in this project are powered by the GAPP library provided by KRM7 in [https://github.com/KRM7/gapp/](https://github.com/KRM7/gapp/].
+The Genetic Algorithm variations in this project are powered by the GAPP library provided by KRM7 in [https://github.com/KRM7/gapp/](https://github.com/KRM7/gapp/).
 
 ## License
 
